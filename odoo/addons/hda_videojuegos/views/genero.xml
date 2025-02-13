@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hda_videojuegos.genero_form" model="ir.ui.view">
+            <field name="name">hda_videojuegos.genero.form</field>
+            <field name="model">hda_videojuegos.genero</field>
+            <field name="arch" type="xml">
+                <form string="Genero">
+                    <sheet>
+                        <group>
+                            <field name="name"></field>
+                            <field name="description" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>       
+    
+    <record id="hda_videojuegos.genero_tree" model="ir.ui.view">
+        <field name="name">hda_videojuegos.genero.tree</field>
+        <field name="model">hda_videojuegos.genero</field>
+        <field name="arch" type="xml">
+            <tree string="Genero">
+                <field name="name"></field>
+                <field name="description" />
+            </tree>
+        </field>
+    </record>
+    </data>
+</odoo>
