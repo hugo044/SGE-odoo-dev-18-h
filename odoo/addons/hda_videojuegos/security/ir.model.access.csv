@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hda_videojuegos_hda_videojuegos,hda_videojuegos.hda_videojuegos,model_hda_videojuegos_hda_videojuegos,base.group_user,1,1,1,1
+access_hda_videojuegos_hda_videojuegos,hda_videojuegos.hda_videojuegos,model_hda_videojuegos_videojuego,base.group_user,1,1,1,1
+access_hda_videojuegos_hda_videojuegos,hda_videojuegos.hda_videojuegos,model_hda_videojuegos_genero,base.group_user,1,1,1,1
+access_hda_videojuegos_hda_videojuegos,hda_videojuegos.hda_videojuegos,model_hda_videojuegos_cliente,base.group_user,1,1,1,1

@@ -7,13 +7,7 @@
             <field name="res_model">hda_videojuegos.genero</field>
             <field name="view_mode">tree,form</field>
         </record>
-
-        <record id="hda_videojuegos.precio_action" model="ir.actions.act_window">
-            <field name="name">Precios</field>
-            <field name="res_model">hda_videojuegos.precios</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-
+        
         <!--Menús-->
         <menuitem
             id="hda_videojuegos.root_menu"
@@ -27,12 +21,6 @@
             parent="hda_videojuegos.root_menu"
             sequence="10"/>
 
-            <menuitem
-            id="hda_videojuegos.precio_menu"
-            name="Precios"
-            action="hda_videojuegos.precio_action"
-            parent="hda_videojuegos.root_menu"
-            sequence="10"/>
 
     </data>
 </odoo>

@@ -7,6 +7,4 @@ class Cliente(models.Model):
     _description = 'Cliente'
 
     name = fields.Char('Nombre del cliente')
-    numero_cliente = fields.Float('Numero de cliente')
-    numero_cuenta = fields.Float('Numero de cuenta')
     telefono = fields.Float('Telefono')

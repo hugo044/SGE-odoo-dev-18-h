@@ -6,4 +6,5 @@ class Consola(models.Model):
 
     name = fields.Char('Nombre', required=True)
     precio = fields.Float('Precio')
+    #oofmonetary --> res.currency
     modelo = fields.Char('Modelo')

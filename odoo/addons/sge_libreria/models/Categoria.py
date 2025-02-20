@@ -8,3 +8,5 @@ class Categoria(models.Model):
 
     name = fields.Char('Nombre', required=True)
     description = fields.Char('Descripción')
+
+    libro_ids = fields.One2many('sge_libreria.libro', 'categoria_id', string='Libro')

@@ -25,6 +25,8 @@ Long description of module's purpose
         'security/ir.model.access.csv',
         'views/categoria.xml',
         'views/menus.xml',
+        'views/libro.xml',
+        'views/autor.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
