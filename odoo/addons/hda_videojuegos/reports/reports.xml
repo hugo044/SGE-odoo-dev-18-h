@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="informe_web" model="ir.actions.report">
+        <field name="name">Informe</field>
+        <field name="model"></field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">field_value</field>
+        <field name="report_file">field_value</field>
+        <field name="binding_model_id" ref=""/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="informePedidoWeb">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="">
+                <t t-call="web.basic_layout">
+                    <div class="header"></div>
+                    <div class="header"></div>
+                    <h1 t-field=""/>
+
+                    <div>
+                        <strong> </strong>
+                        <span t-field="">
+                    </div>
+
+                    <div>
+                        <strong> </strong>
+                        <span t-field="">
+                    </div>
+
+                    <div>
+                        <strong> </strong>
+                        <span t-field="">
+                    </div>
+
+                    <div class="footer"></div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

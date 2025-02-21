@@ -10,6 +10,7 @@ Long description of module's purpose
 
     'author': "My Company",
     'website': "https://www.yourcompany.com",
+    'icon':'/hda_videojuegos/static/description/icono.png',
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -25,6 +26,7 @@ Long description of module's purpose
         'security/ir.model.access.csv',
         'views/genero.xml',
         'views/menus.xml',
+        'reports/reports.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
