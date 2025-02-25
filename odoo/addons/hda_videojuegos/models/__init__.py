@@ -3,4 +3,4 @@
 from . import Videojuego
 from . import Cliente
 from . import Genero
-
+from . import Pedido

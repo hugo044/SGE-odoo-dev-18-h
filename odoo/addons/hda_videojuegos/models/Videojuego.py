@@ -7,7 +7,11 @@ class Videojuego(models.Model):
     _description = 'Videojuego'
 
     name = fields.Char('Titulo',required=True)
-    precio = fields.Float('Precio')
+    precio = fields.Float('Precio',required=True)
     stock = field_name = fields.Float('Stock')
     fecha_lanzamiento = fields.Datetime('Fecha de lanzamiento')
-    genero = fields.Char('Genero')
+    portada = fields.Binary('Portada', max_width=100, min_width=100)
+
+
+    genero_ids = fields.Many2many('hda_videojuegos.genero',relation="hda_videojuegos_genero_videojuego_rel", string='Genero')
+    cliente_ids = fields.One2many('hda_videojuegos.cliente', 'videojuegos_id',string='Cliente')

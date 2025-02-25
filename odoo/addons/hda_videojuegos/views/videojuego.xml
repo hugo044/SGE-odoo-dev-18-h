@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hda_videojuegos.videojuego_form" model="ir.ui.view">
+            <field name="name">hda_videojuegos.videojuego.form</field>
+            <field name="model">hda_videojuegos.videojuego</field>
+            <field name="arch" type="xml">
+                <form string="Videojuego">
+                    <sheet>
+                        <group>
+                            <field name="name"></field>
+                            <field name="precio"/>
+                            <field name="stock"/>
+                            <field name="fecha_lanzamiento"/>
+                            <field name="genero_ids"/>
+                            <field name="cliente_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>       
+    
+        <record id="hda_videojuegos.videojuego_tree" model="ir.ui.view">
+            <field name="name">hda_videojuegos.videojuego.tree</field>
+            <field name="model">hda_videojuegos.videojuego</field>
+            <field name="arch" type="xml">
+                <tree string="Videojuego">
+                    <field name="name"></field>
+                            <field name="precio"/>
+                            <field name="stock"/>
+                            <field name="fecha_lanzamiento"/>
+                            <field name="genero_ids"/>
+                            <field name="cliente_ids"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record id="hda_videojuegos.videojuego_search" model="ir.ui.view">
+            <field name="name">hda_videojuegos.videojuego.search</field>
+            <field name="model">hda_videojuegos.videojuego</field>
+            <field name="arch" type="xml">
+                <search string="Videojuego">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo> 

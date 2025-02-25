@@ -8,6 +8,27 @@
             <field name="view_mode">kanban,tree,form</field>
             <field name="view_id" ref="hda_videojuegos.genero_kanban"/>
         </record>
+
+        <record id="hda_videojuegos.videojuego_action" model="ir.actions.act_window">
+            <field name="name">Videojuegos</field>
+            <field name="res_model">hda_videojuegos.videojuego</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_id" ref="hda_videojuegos.videojuego_kanban"/>
+        </record>
+
+        <record id="hda_videojuegos.cliente_action" model="ir.actions.act_window">
+            <field name="name">Clientes</field>
+            <field name="res_model">hda_videojuegos.cliente</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_id" ref="hda_videojuegos.cliente_kanban"/>
+        </record>
+
+        <record id="hda_videojuegos.pedido_action" model="ir.actions.act_window">
+            <field name="name">Pedidos</field>
+            <field name="res_model">hda_videojuegos.pedido</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_id" ref="hda_videojuegos.pedido_kanban"/>
+        </record>
         
         <!--Menús-->
         <menuitem
@@ -19,6 +40,27 @@
             id="hda_videojuegos.genero_menu"
             name="Genero"
             action="hda_videojuegos.genero_action"
+            parent="hda_videojuegos.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="hda_videojuegos.cliente_menu"
+            name="Cliente"
+            action="hda_videojuegos.cliente_action"
+            parent="hda_videojuegos.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="hda_videojuegos.pedido_menu"
+            name="Pedido"
+            action="hda_videojuegos.pedido_action"
+            parent="hda_videojuegos.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="hda_videojuegos.videojuego_menu"
+            name="Videojuego"
+            action="hda_videojuegos.videojuego_action"
             parent="hda_videojuegos.root_menu"
             sequence="10"/>
 
