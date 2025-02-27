@@ -10,7 +10,13 @@
                         <group>
                             <field name="name"></field>
                             <field name="description"/>
-                            <field name="videojuego_ids"/>
+                            <field name="videojuego_ids">
+                            <tree>
+                                 <field name="name"/>
+                                 <field name="precio"/>
+                                 <field name="portada" widget="image"/>
+                            </tree>
+                            </field>
                         </group>
                         
                     </sheet>

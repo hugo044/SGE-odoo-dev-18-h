@@ -10,6 +10,11 @@
                         <group>
                             <field name="name"></field>
                             <field name="telefono"/>
+                            <field name="pedido_id">
+                                <tree>
+                                 <field name="codigo"/>
+                                </tree>
+                            </field>
                         </group>
                     </sheet>
                 </form>
