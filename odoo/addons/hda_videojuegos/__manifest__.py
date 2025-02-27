@@ -8,7 +8,9 @@
     Este módulo permite gestionar los clientes, generos, videojuegos y pedidos de una tienda de videojuegos.
     Permite crear, modificar y eliminar componentes en el día a día de una excelente tienda de videojuegos.
     """,
-
+    'installable': True,
+    'application': True,
+    'auto_install': False,
     'license': 'LGPL-3',
     'author': "Hugo Donoso Aldea",
     'website': "https://www.tiendadevideojuegos.com",
