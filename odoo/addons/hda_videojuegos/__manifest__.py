@@ -9,6 +9,7 @@
     Permite crear, modificar y eliminar componentes en el día a día de una excelente tienda de videojuegos.
     """,
 
+    'license': 'LGPL-3',
     'author': "Hugo Donoso Aldea",
     'website': "https://www.tiendadevideojuegos.com",
     'icon':'/hda_videojuegos/static/description/icono.png',
