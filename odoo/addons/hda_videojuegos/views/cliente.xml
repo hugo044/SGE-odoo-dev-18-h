@@ -13,6 +13,7 @@
                             <field name="pedido_id">
                                 <tree>
                                  <field name="codigo"/>
+                                 <field name="description_corta"></field>
                                 </tree>
                             </field>
                         </group>
