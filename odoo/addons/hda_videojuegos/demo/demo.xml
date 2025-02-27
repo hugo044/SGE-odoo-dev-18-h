@@ -1,87 +1,83 @@
 <odoo>
     <data>
 
-          <record id="hda_videojuegos.videojuego1" model="hda_videojuegos.videojuego">
+          <record id="hda_videojuegos_videojuego1" model="hda_videojuegos.videojuego">
             <field name="name">Street Fighter 6</field>
             <field name="precio">40</field>
             <field name="stock">13</field>
-            <field name="fecha_lanzamiento">2-6-2023</field>
-            <field name="portada" type="base64" file="hda_videojuegos/static/description/streetFighter.jpg">
+            <field name="fecha_lanzamiento">2023-06-02</field>
+            <field name="portada" type="base64" file="hda_videojuegos/static/description/streetFighter.png"></field>
           </record>
 
-          <record id="hda_videojuegos.videojuego2" model="hda_videojuegos.videojuego">
+          <record id="hda_videojuegos_videojuego2" model="hda_videojuegos.videojuego">
             <field name="name">Fifa 25</field>
             <field name="precio">70</field>
             <field name="stock">10</field>
-            <field name="fecha_lanzamiento">10-9-2024</field>
-            <field name="portada" type="base64" file="hda_videojuegos/static/description/fifa25.jpg">
+            <field name="fecha_lanzamiento">2024-09-10</field>
+            <field name="portada" type="base64" file="hda_videojuegos/static/description/fifa25.jpg"></field>
             
           </record>
 
-          <record id="hda_videojuegos.videojuego3" model="hda_videojuegos.videojuego">
+          <record id="hda_videojuegos_videojuego3" model="hda_videojuegos.videojuego">
             <field name="name">Fornite</field>
             <field name="precio">25</field>
             <field name="stock">30</field>
-            <field name="fecha_lanzamiento">8-7-2019</field>
-            <field name="portada" type="base64" file="hda_videojuegos/static/description/fornite.jpg">
+            <field name="fecha_lanzamiento">2019-07-08</field>
+            <field name="portada" type="base64" file="hda_videojuegos/static/description/fornite.jpg"></field>
           </record>
 
-          <record id="hda_videojuegos.videojuego4" model="hda_videojuegos.videojuego">
+          <record id="hda_videojuegos_videojuego4" model="hda_videojuegos.videojuego">
             <field name="name">Rocket League</field>
             <field name="precio">29</field>
             <field name="stock">15</field>
-            <field name="fecha_lanzamiento">7-7-2015</field>
-            <field name="portada" type="base64" file="hda_videojuegos/static/description/Rocket_League.jpg">
+            <field name="fecha_lanzamiento">2015-07-07</field>
+            <field name="portada" type="base64" file="hda_videojuegos/static/description/Rocket_League.jpg"></field>
           </record>
 
-          <record id="hda_videojuegos.videojuego5" model="hda_videojuegos.videojuego">
+          <record id="hda_videojuegos_videojuego5" model="hda_videojuegos.videojuego">
             <field name="name">Pokemon Go</field>
             <field name="precio">70</field>
             <field name="stock">27</field>
-            <field name="fecha_lanzamiento">5-3-2022</field>
-            <field name="portada" type="base64" file="hda_videojuegos/static/description/pokemon.jpg">
+            <field name="fecha_lanzamiento">2022-03-05</field>
+            <field name="portada" type="base64" file="hda_videojuegos/static/description/pokemon.jpg"></field>
           </record>
 
 
-          <record id="hda_videojuegos.cliente1" model="hda_videojuegos.cliente">
+          <record id="hda_videojuegos_cliente1" model="hda_videojuegos.cliente">
             <field name="name">David González Jiménez</field>
             <field name="telefono">123456789</field>
           </record>
 
-          <record id="hda_videojuegos.cliente2" model="hda_videojuegos.cliente">
+          <record id="hda_videojuegos_cliente2" model="hda_videojuegos.cliente">
             <field name="name">Alejandro González Jiménez</field>
             <field name="telefono">234567891</field>
           </record>
 
-          <record id="hda_videojuegos.cliente3" model="hda_videojuegos.cliente">
+          <record id="hda_videojuegos_cliente3" model="hda_videojuegos.cliente">
             <field name="name">Hugo Donoso Aldea</field>
             <field name="telefono">345678912</field>
           </record>
 
-          <record id="hda_videojuegos.genero1" model="hda_videojuegos.genero">
+          <record id="hda_videojuegos_genero1" model="hda_videojuegos.genero">
             <field name="name">Lucha</field>
             <field name="description">Juegos de combato que tienen a algun tipo de arte marcial</field>
-            <field name="videojuego_ids" eval="[
-          Command.link(ref('hda_videojuegos.videojuego1')),
-        ]"/>
+            <field name="videojuego_ids" eval="[(6,0,[ref('hda_videojuegos_videojuego1')])]"/>
           </record>
 
-          <record id="hda_videojuegos.genero1" model="hda_videojuegos.genero">
+          <record id="hda_videojuegos_genero2" model="hda_videojuegos.genero">
             <field name="name">Deportes</field>
             <field name="description">Juegos que contienen algun deporte</field>
           </record>
 
-          <record id="hda_videojuegos.genero1" model="hda_videojuegos.genero">
+          <record id="hda_videojuegos_genero3" model="hda_videojuegos.genero">
             <field name="name">Accion</field>
             <field name="description">Juegos de accion</field>
           </record>
 
-          <record id="hda_videojuegos.genero1" model="hda_videojuegos.genero">
+          <record id="hda_videojuegos_pedido1" model="hda_videojuegos.pedido">
             <field name="codigo">1</field>
-            <field name="descripion_corta">2 videojuegos edicion limitada (Fragil)</field>
-            <field name="clientes_ids" eval="[
-          Command.link(ref('hda_videojuegos.cliente1)),
-        ]"/>
+            <field name="descripion_corta">2 videojuegos edicion limitada(Fragil)</field>
+            <field name="clientes_ids" ref='hda_videojuegos_cliente1'/>
           </record>
           
     </data>

@@ -20,12 +20,12 @@
 
                     <div>
                         <strong>Código: </strong>
-                        <span t-field="pedido.codigo">
+                        <span t-field="pedido.codigo"/>
                     </div>
 
                     <div>
                         <strong>Descripcion corta: </strong>
-                        <span t-field="pedido.descripcion_corta">
+                        <span t-field="pedido.descripcion_corta"/>
                     </div>
 
                     <div class="footer"></div>
