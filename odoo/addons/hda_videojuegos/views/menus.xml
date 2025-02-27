@@ -12,22 +12,19 @@
         <record id="hda_videojuegos.videojuego_action" model="ir.actions.act_window">
             <field name="name">Videojuegos</field>
             <field name="res_model">hda_videojuegos.videojuego</field>
-            <field name="view_mode">kanban,tree,form</field>
-            <field name="view_id" ref="hda_videojuegos.videojuego_kanban"/>
+            <field name="view_mode">tree,form</field>
         </record>
 
         <record id="hda_videojuegos.cliente_action" model="ir.actions.act_window">
             <field name="name">Clientes</field>
             <field name="res_model">hda_videojuegos.cliente</field>
-            <field name="view_mode">kanban,tree,form</field>
-            <field name="view_id" ref="hda_videojuegos.cliente_kanban"/>
+            <field name="view_mode">tree,form</field>
         </record>
 
         <record id="hda_videojuegos.pedido_action" model="ir.actions.act_window">
             <field name="name">Pedidos</field>
             <field name="res_model">hda_videojuegos.pedido</field>
-            <field name="view_mode">kanban,tree,form</field>
-            <field name="view_id" ref="hda_videojuegos.pedido_kanban"/>
+            <field name="view_mode">tree,form</field>
         </record>
         
         <!--Menús-->

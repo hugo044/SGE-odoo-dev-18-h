@@ -39,7 +39,10 @@
             <field name="model">hda_videojuegos.genero</field>
             <field name="arch" type="xml">
                 <kanban>
+                <field name="name"/>
+                <field name="description"/>
                     <templates>
+                    <t t-name="kanban-box">
                         <div class="hda_videojuegos_global_click">
                             <div class="hda_videojuegos_details">
                                 <strong>
@@ -50,6 +53,7 @@
                                 </div>
                             </div>
                         </div>
+                        </t>
                     </templates>
                 </kanban>
             </field>
