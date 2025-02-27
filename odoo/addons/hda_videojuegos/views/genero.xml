@@ -29,7 +29,15 @@
             </field>
         </record>  
 
-           
+        <record id="hda_videojuegos.genero_graph" model="ir.ui.view">
+            <field name="name">Graficos de generos</field>
+            <field name="model">hda_videojuegos.genero</field>
+            <field name="arch" type="xml">
+                <graph string="Generos" type="pie">
+                    <field name="name" />
+                </graph>
+            </field>
+        </record>     
     
         <record id="hda_videojuegos.genero_tree" model="ir.ui.view">
             <field name="name">hda_videojuegos.genero.tree</field>
