@@ -5,8 +5,8 @@
         <record id="hda_videojuegos.genero_action" model="ir.actions.act_window">
             <field name="name">Generos</field>
             <field name="res_model">hda_videojuegos.genero</field>
-            <field name="view_mode">kanban,tree,form</field>
-            <field name="view_id" ref="hda_videojuegos.genero_kanban"/>
+            <field name="view_mode">tree,form</field>
+            <!--<field name="view_id" ref="hda_videojuegos.genero_kanban"/>-->
         </record>
 
         <record id="hda_videojuegos.videojuego_action" model="ir.actions.act_window">

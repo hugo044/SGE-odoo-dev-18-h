@@ -14,4 +14,4 @@ class Videojuego(models.Model):
 
 
     genero_ids = fields.Many2many('hda_videojuegos.genero',relation="hda_videojuegos_genero_videojuego_rel", string='Genero')
-    cliente_ids = fields.One2many('hda_videojuegos.cliente', 'videojuegos_id',string='Cliente')
+    cliente_ids = fields.Many2one('hda_videojuegos.cliente', string='Cliente')

@@ -31,6 +31,7 @@
         'views/pedido.xml',
         'views/videojuego.xml',
         'reports/reports.xml',
+        'reports/report_videojuego.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

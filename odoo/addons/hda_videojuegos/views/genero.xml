@@ -9,13 +9,14 @@
                     <sheet>
                         <group>
                             <field name="name"></field>
-                            <field name="description" />
+                            <field name="description"/>
+                            <field name="videojuego_ids"/>
                         </group>
                         
                     </sheet>
-
-                    <div class="videojuego_chatter">
-                            <field name="message_follower_ids" widget="mail_followers"/>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" groups="base.group_user" widget="mail_followers" />
+                            <field name="activity_ids" widget="mail_activity"/>
                             <field name="message_ids" widget="mail_thread"/>
                         </div>
                 </form>
@@ -34,30 +35,7 @@
             </field>
         </record>
 
-        <record id="hda_videojuegos.genero_kanban" model="ir.ui.view">
-            <field name="name">hda_videojuegos.genero.kanban</field>
-            <field name="model">hda_videojuegos.genero</field>
-            <field name="arch" type="xml">
-                <kanban>
-                <field name="name"/>
-                <field name="description"/>
-                    <templates>
-                    <t t-name="kanban-box">
-                        <div class="hda_videojuegos_global_click">
-                            <div class="hda_videojuegos_details">
-                                <strong>
-                                    <field name="name"/>
-                                </strong>
-                                <div>
-                                    <field name="description"/>
-                                </div>
-                            </div>
-                        </div>
-                        </t>
-                    </templates>
-                </kanban>
-            </field>
-        </record>
+
 
         <record id="hda_videojuegos.genero_search" model="ir.ui.view">
             <field name="name">hda_videojuegos.genero.search</field>
@@ -68,5 +46,6 @@
                 </search>
             </field>
         </record>
+
     </data>
 </odoo>

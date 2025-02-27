@@ -61,7 +61,7 @@
           <record id="hda_videojuegos_genero1" model="hda_videojuegos.genero">
             <field name="name">Lucha</field>
             <field name="description">Juegos de combato que tienen a algun tipo de arte marcial</field>
-            <field name="videojuego_ids" eval="[(6,0,[ref('hda_videojuegos_videojuego1')])]"/>
+            <field name="videojuego_ids" eval="[(6, 0, [ref('hda_videojuegos_videojuego1')])]"/>
           </record>
 
           <record id="hda_videojuegos_genero2" model="hda_videojuegos.genero">
@@ -76,8 +76,8 @@
 
           <record id="hda_videojuegos_pedido1" model="hda_videojuegos.pedido">
             <field name="codigo">1</field>
-            <field name="descripion_corta">2 videojuegos edicion limitada(Fragil)</field>
-            <field name="clientes_ids" ref='hda_videojuegos_cliente1'/>
+            <field name="description_corta">2 videojuegos edicion limitada(Fragil)</field>
+            <field name="clientes_ids" ref="hda_videojuegos_cliente1"/>
           </record>
           
     </data>

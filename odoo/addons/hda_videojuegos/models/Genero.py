@@ -11,6 +11,4 @@ class Genero(models.Model):
     
     videojuego_ids = fields.Many2many('hda_videojuegos.videojuego', relation="hda_videojuegos_genero_videojuego_rel" , string='Videojuego')
 
-    def enviar_notificacion(self):
-        self.message_post(body="Se ha realizado un cambio importante",
-                            subtype_id=self.env.ref('mail.mt_note').id)
+    

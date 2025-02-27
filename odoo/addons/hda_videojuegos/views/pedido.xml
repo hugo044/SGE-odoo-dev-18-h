@@ -10,6 +10,7 @@
                         <group>
                             <field name="codigo"></field>
                             <field name="description_corta"></field>
+                            <field name="clientes_ids"></field>
                         </group>
                     </sheet>
                 </form>
@@ -22,7 +23,8 @@
             <field name="arch" type="xml">
                 <tree string="Pedido">
                     <field name="codigo"/>
-                   <field name="description_corta"></field>                   
+                   <field name="description_corta"></field> 
+                   <field name="clientes_ids"></field>                  
                 </tree>
             </field>
         </record>

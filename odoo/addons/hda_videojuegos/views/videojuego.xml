@@ -12,9 +12,14 @@
                             <field name="precio"/>
                             <field name="stock"/>
                             <field name="fecha_lanzamiento"/>
-                            <field name="genero_ids"/>
+                            <field name="portada" widget="image"/>
                             <field name="cliente_ids"/>
                         </group>
+                        <notebook>
+                            <page name="generos" string="Generos">
+                                <field name="genero_ids"/>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -29,6 +34,7 @@
                             <field name="precio"/>
                             <field name="stock"/>
                             <field name="fecha_lanzamiento"/>
+                            <field name="portada" widget="image"/>
                             <field name="genero_ids"/>
                             <field name="cliente_ids"/>
                 </tree>
