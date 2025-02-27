@@ -19,7 +19,8 @@
                     </sheet>
                 </form>
             </field>
-        </record>       
+        </record>     
+          
     
         <record id="hda_videojuegos.cliente_tree" model="ir.ui.view">
             <field name="name">hda_videojuegos.cliente.tree</field>
