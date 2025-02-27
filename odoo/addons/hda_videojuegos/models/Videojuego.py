@@ -8,8 +8,8 @@ class Videojuego(models.Model):
 
     name = fields.Char('Titulo',required=True)
     precio = fields.Float('Precio',required=True)
-    stock = field_name = fields.Float('Stock')
-    fecha_lanzamiento = fields.Datetime('Fecha de lanzamiento')
+    stock = fields.Float('Stock')
+    fecha_lanzamiento= fields.Date('Fecha de lanzamiento')
     portada = fields.Binary('Portada', max_width=100, min_width=100)
 
 

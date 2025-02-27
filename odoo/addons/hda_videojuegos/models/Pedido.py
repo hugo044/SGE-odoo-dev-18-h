@@ -7,4 +7,5 @@ class Pedido(models.Model):
     codigo = fields.Char('Codigo', required=True)
     description_corta = fields.Char('Descripcion corta')
     
-    clientes_ids = fields.One2many('hda_videojuegos.cliente', 'pedido_id', string='Clientes')
+  
+    clientes_ids = fields.Many2one('hda_videojuegos.cliente', string='Clientes')

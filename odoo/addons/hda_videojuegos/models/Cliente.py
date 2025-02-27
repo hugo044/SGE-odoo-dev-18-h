@@ -10,4 +10,4 @@ class Cliente(models.Model):
     telefono = fields.Float('Telefono', required=True, help='Introduce el numero de telefono')
 
     videojuegos_id = fields.Many2one('hda_videojuegos.videojuego', string='Videojuegos')
-    pedido_id = fields.Many2one('hda_videojuegos.pedido', string='Pedido')
+    pedido_id = fields.One2many('hda_videojuegos.pedido', 'clientes_id' string='Pedido')
