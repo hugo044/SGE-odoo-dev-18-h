@@ -23,7 +23,61 @@
                     </sheet>
                 </form>
             </field>
-        </record>       
+        </record>    
+
+    <record id="hda_videojuegos.videojuego_pivot" model="ir.ui.view">
+      <field name="name">Pivot tabla videojuegos</field>
+      <field name="model">hda_videojuegos.videojuego</field>
+      <field name="arch" type="xml">
+        <pivot string="Pivot table" disable_linking="true">
+          <field name="name" type="row" />
+          <field name="precio" type="col"></field>
+        </pivot>
+      </field>
+    </record>  
+
+        <record id="hda_videojuegos.videojuego_kanban" model="ir.ui.view">
+      <field name="name">hda_videojuegos.videojuego.kanban</field>
+      <field name="model">hda_videojuegos.videojuego</field>
+      <field name="arch" type="xml">
+        <kanban class="o_kanban_mobile">
+          <field name="name" />
+          <field name="precio" />
+          <field name="stock" />
+          <field name="fecha_lanzamiento" />
+          <field name="portada" widget="image" class="oe_avatar" />
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('hda_videojuegos.videojuego', 'portada', record.id.raw_value)" alt="Image" />
+                </div>
+                <div class="oe_kanban_details">
+                  <div class="o_kanban_record_top">
+                    <div class="o_kanban_record_headings">
+                      <strong class="o_kanban_record_title oe_partener_heading">
+                        <p>
+                          <field name="name" />
+                        </p>
+                        <p>
+                          <field name="precio" />
+                        </p>
+                      </strong>
+                        <field name="stock"/>
+                      <ul>
+                        <li>
+                          <field name="fecha_lanzamiento" /> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record> 
     
         <record id="hda_videojuegos.videojuego_tree" model="ir.ui.view">
             <field name="name">hda_videojuegos.videojuego.tree</field>
