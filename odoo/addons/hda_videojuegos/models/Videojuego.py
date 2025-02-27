@@ -10,7 +10,7 @@ class Videojuego(models.Model):
     precio = fields.Float('Precio',required=True)
     stock = fields.Float('Stock')
     fecha_lanzamiento= fields.Date('Fecha de lanzamiento')
-    portada = fields.Binary('Portada', max_width=100, min_width=100)
+    portada = fields.Binary('Portada')
 
 
     genero_ids = fields.Many2many('hda_videojuegos.genero',relation="hda_videojuegos_genero_videojuego_rel", string='Genero')
